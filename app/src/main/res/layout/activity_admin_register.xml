@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Signup.AdminRegister">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name : "
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/adnameTiile"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ABC Blood Bank"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/adnameTiile"
+        android:id="@+id/adname"
+        android:layout_toRightOf="@+id/adnameTiile"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country : "
+        android:textSize="20sp"
+        android:layout_below="@+id/adnameTiile"
+        android:layout_marginTop="30dp"
+        android:id="@+id/adCntryTiile"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ex : India"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/adCntryTiile"
+        android:id="@+id/adCntry"
+        android:layout_toRightOf="@+id/adCntryTiile"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State : "
+        android:textSize="20sp"
+        android:layout_below="@+id/adCntryTiile"
+        android:layout_marginTop="30dp"
+        android:id="@+id/adstateTiile"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ex : Maharashtra"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/adstateTiile"
+        android:id="@+id/adstate"
+        android:layout_toRightOf="@+id/adstateTiile"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City : "
+        android:textSize="20sp"
+        android:layout_below="@+id/adstateTiile"
+        android:layout_marginTop="30dp"
+        android:id="@+id/adcityTiile"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ex : Mumbai"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/adcityTiile"
+        android:id="@+id/adcity"
+        android:layout_toRightOf="@+id/adcityTiile"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email id : "
+        android:textSize="20sp"
+        android:layout_below="@+id/adcityTiile"
+        android:layout_marginTop="30dp"
+        android:id="@+id/ademailTiile"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="example@ex.com"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/ademailTiile"
+        android:id="@+id/ademail"
+        android:layout_toRightOf="@+id/ademailTiile"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password : "
+        android:textSize="20sp"
+        android:layout_below="@+id/ademailTiile"
+        android:layout_marginTop="30dp"
+        android:id="@+id/adPwTiile"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/adPwTiile"
+        android:id="@+id/adRgPw"
+        android:layout_toRightOf="@+id/adPwTiile"
+        android:password="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password : "
+        android:textSize="20sp"
+        android:layout_below="@+id/adPwTiile"
+        android:layout_marginTop="30dp"
+        android:id="@+id/adConfPwTiile"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/adConfPwTiile"        android:id="@+id/adConfRgPw"
+        android:layout_toRightOf="@+id/adConfPwTiile"
+        android:password="true"
+        />
+    <Button
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:onClick="AdSignUp"
+        android:layout_below="@+id/adConfPwTiile"
+        android:id="@+id/adRgSignup"
+        />
+    <TextView
+        android:id="@+id/adRguserLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Login"
+        android:layout_alignLeft="@+id/adRgSignup"
+        android:onClick="fromAdRegToUserLogin"
+        android:layout_below="@+id/adRgSignup"
+        />
+    <TextView
+        android:id="@+id/adRgadLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Temp"
+        android:text="Institute Login"
+        android:layout_alignRight="@+id/adRgSignup"
+        android:layout_below="@+id/adRgSignup"
+        />
+</RelativeLayout>

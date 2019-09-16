@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Users.Donate">
+
+
+    <TextView
+        android:id="@+id/d_cntry_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country : "
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+    <Spinner
+        android:id="@+id/d_cntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/d_cntry_title"
+        android:layout_alignBaseline="@+id/d_cntry_title"
+        />
+    <TextView
+        android:id="@+id/d_state_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State : "
+        android:layout_below="@+id/d_cntry_title"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+    <Spinner
+        android:id="@+id/d_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/d_state_title"
+        android:layout_alignBaseline="@+id/d_state_title"
+        />
+    <TextView
+        android:id="@+id/d_city_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City : "
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/d_state_title"
+        android:layout_marginLeft="20dp"
+        />
+    <Spinner
+        android:id="@+id/d_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/d_city_title"
+        android:layout_alignBaseline="@+id/d_city_title"
+        />
+    <TextView
+        android:id="@+id/d_InstituteName_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Institute Name : "
+        android:textSize="20sp"
+        android:layout_below="@+id/d_city_title"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+    <Spinner
+        android:id="@+id/d_InstituteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/d_InstituteName_title"
+        android:layout_alignBaseline="@+id/d_InstituteName_title"
+        />
+    <Button
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:onClick="sendData"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/d_InstituteName_title"
+        />
+</RelativeLayout>

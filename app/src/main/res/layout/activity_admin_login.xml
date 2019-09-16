@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Signup.AdminLogin">
+
+    <EditText
+        android:layout_width="357sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="email"
+        android:id="@+id/adId"
+        />
+    <EditText
+        android:id="@+id/adPw"
+        android:layout_below="@+id/adId"
+        android:layout_marginTop="10dp"
+        android:layout_width="357sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="email"
+        />
+    <Button
+        android:id="@+id/adLogin"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/adPw"
+        android:text="LOGIN"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/adSignup"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/adLogin"
+        android:text="REGISTER"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/UserLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Login"
+        android:layout_alignLeft="@+id/adSignup"
+        android:layout_below="@+id/adSignup"
+        />
+    <TextView
+        android:id="@+id/forgetPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:layout_alignRight="@+id/adSignup"
+        android:layout_below="@+id/adSignup"
+        />
+</RelativeLayout>
