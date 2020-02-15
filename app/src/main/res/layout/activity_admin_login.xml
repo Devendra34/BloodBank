@@ -3,13 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login_Signup.AdminLogin">
+    tools:context=".Activity.AdminLogin">
+
+    <TextView
+        android:padding="3dp"
+        android:id="@+id/adTxtview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="ADMIN LOGIN"
+        android:textSize="45dp"
+        android:textColor="@color/blue2"
+        android:layout_margin="12dp"
+        android:layout_alignParentTop="true"/>
 
     <EditText
+        android:layout_below="@id/adTxtview1"
         android:layout_width="357sp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:hint="email"
+        android:ellipsize="end"
+        android:maxLines="1"
         android:id="@+id/adId"
         />
     <EditText
@@ -18,16 +33,22 @@
         android:layout_marginTop="10dp"
         android:layout_width="357sp"
         android:layout_height="wrap_content"
+        android:password="true"
+        android:ellipsize="end"
+        android:maxLines="1"
         android:layout_centerHorizontal="true"
-        android:hint="email"
+        android:hint="password"
         />
     <Button
         android:id="@+id/adLogin"
         android:layout_width="357dp"
+        android:background="@drawable/grey_border"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/adPw"
         android:text="LOGIN"
+        android:padding="5dp"
+        android:onClick="adminSignIn"
         android:textSize="20dp"/>
 
     <Button
@@ -36,7 +57,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/adLogin"
+        android:background="@drawable/grey_border"
         android:text="REGISTER"
+        android:padding="5dp"
+        android:onClick="goToAdminReg"
         android:textSize="20dp"/>
     <TextView
         android:id="@+id/UserLogin"
@@ -44,6 +68,7 @@
         android:layout_height="wrap_content"
         android:text="User Login"
         android:layout_alignLeft="@+id/adSignup"
+        android:onClick="goToUserLogin"
         android:layout_below="@+id/adSignup"
         />
     <TextView

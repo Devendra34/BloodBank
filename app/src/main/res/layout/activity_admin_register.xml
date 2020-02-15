@@ -5,9 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login_Signup.AdminRegister">
+    tools:context=".Activity.AdminRegister">
+
 
     <TextView
+        android:id="@+id/adSignUpheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="@color/blue2"
+        android:textSize="45dp"
+        android:text="ADMIN SIGN-UP"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_below="@id/adSignUpheading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name : "
@@ -138,6 +149,7 @@
         android:layout_centerHorizontal="true"
         android:text="Sign Up"
         android:textSize="20sp"
+        android:background="@drawable/grey_border"
         android:layout_marginTop="30dp"
         android:onClick="AdSignUp"
         android:layout_below="@+id/adConfPwTiile"

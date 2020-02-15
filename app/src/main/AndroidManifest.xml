@@ -9,13 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Users.UserDashboard"></activity>
-        <activity android:name=".Users.RequestBlood" />
-        <activity android:name=".Users.Donate" />
-        <activity android:name=".Login_Signup.UserRegister" />
-        <activity android:name=".Login_Signup.UserLogin" />
-        <activity android:name=".Login_Signup.AdminRegister" />
-        <activity android:name=".Login_Signup.AdminLogin" />
+        <activity android:name=".Activity.SingleUserData"></activity>
+        <activity android:name=".Activity.AdminProfile" />
+        <activity android:name=".Activity.VerifiedRequests" />
+        <activity android:name=".Activity.UserProfile" />
+        <activity
+            android:name=".Activity.UserDashboard"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Activity.RequestBlood" />
+        <activity android:name=".Activity.Donate" />
+        <activity android:name=".Activity.UserRegister" />
+        <activity android:name=".Activity.UserLogin" />
+        <activity android:name=".Activity.AdminRegister" />
+        <activity android:name=".Activity.AdminLogin" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

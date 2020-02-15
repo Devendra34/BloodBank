@@ -5,10 +5,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Users.Donate">
+    tools:context=".Activity.Donate">
+
 
 
     <TextView
+        android:id="@+id/donateHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/red1"
+        android:textSize="45dp"
+        android:text="Donate Blood"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_below="@+id/donateHeading"
         android:id="@+id/d_cntry_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -76,6 +88,7 @@
         android:layout_alignBaseline="@+id/d_InstituteName_title"
         />
     <Button
+        android:background="@drawable/grey_border"
         android:layout_width="357dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"

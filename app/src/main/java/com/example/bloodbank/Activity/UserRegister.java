@@ -1,4 +1,4 @@
-package com.example.bloodbank.Login_Signup;
+package com.example.bloodbank.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +16,6 @@ import android.widget.Toast;
 
 import com.example.bloodbank.R;
 import com.example.bloodbank.Users.UserData;
-import com.example.bloodbank.Users.UserDashboard;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
@@ -40,6 +39,7 @@ public class UserRegister extends AppCompatActivity {
         init();
 
         ArrayList<String> bgList = new ArrayList<>();
+        bgList.add("Choose Blood Group");
         bgList.add("A+");
         bgList.add("B+");
         bgList.add("AB+");
@@ -55,7 +55,10 @@ public class UserRegister extends AppCompatActivity {
         sBloodGrp.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                bgrp = adapterView.getItemAtPosition(i).toString();
+                if(!adapterView.getItemAtPosition(i).toString().equals("Choose Blood Group"))
+                    bgrp = adapterView.getItemAtPosition(i).toString();
+                else
+                    bgrp = null;
             }
 
             @Override
@@ -152,7 +155,7 @@ public class UserRegister extends AppCompatActivity {
                 .addOnFailureListener(this, new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(UserRegister.this, "Registration Unsucceessfull", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(UserRegister.this, "Registration Unsucceessfull\n"+e.getMessage(), Toast.LENGTH_SHORT).show();
                         alertDialog.cancel();
                     }
                 });

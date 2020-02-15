@@ -5,64 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Users.RequestBlood">
+    tools:context=".Activity.RequestBlood">
 
-    <TextView
-        android:id="@+id/r_state_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:text="State : "
-        android:textSize="20sp" />
-    <Spinner
-        android:id="@+id/r_state"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/r_state_title"
-        android:layout_alignBottom="@+id/r_state_title"
-        />
-    <TextView
-        android:id="@+id/r_city_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="City : "
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/r_state_title"
-        android:layout_marginLeft="20dp"
-        />
-    <Spinner
-        android:id="@+id/r_city"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/r_city_title"
-        android:layout_alignBottom="@+id/r_city_title"
-        />
-    <TextView
-        android:id="@+id/r_InstituteName_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Institute Name : "
-        android:textSize="20sp"
-        android:layout_below="@+id/r_city_title"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
-        />
-    <Spinner
-        android:id="@+id/r_InstituteName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/r_InstituteName_title"
-        android:layout_alignBottom="@+id/r_InstituteName_title"
-        />
+
     <TextView
         android:id="@+id/r_bgrp_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Blood Group : "
         android:textSize="20sp"
-        android:layout_below="@+id/r_InstituteName_title"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         />
@@ -78,12 +29,15 @@
         android:layout_width="357dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Request"
+        android:text="Search all Blood Banks"
+        android:background="@drawable/grey_border"
         android:layout_marginTop="10dp"
+        android:onClick="searchBb"
         android:layout_below="@+id/r_bgrp_title"
         />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rrv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/r_request"

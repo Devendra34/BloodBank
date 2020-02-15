@@ -1,16 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Users.UserDashboard">
+    tools:context=".Activity.UserDashboard"
+    android:background="@color/White"
+    >
 
-    <Button
+    <TextView
+        android:id="@+id/head"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Donate"
-        android:onClick="goToDonate"
-        android:layout_centerInParent="true"/>
+        android:textSize="35dp"
+        android:textColor="@color/red1"
+        android:text="THE BLOOD BANK MANAGEMENT SYSTEM"
+        android:textAlignment="center"
+
+    />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/head"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/grey_border"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gd"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:background="@drawable/grey_border"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:textColor="@color/Black"
+            android:text="Donate"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:onClick="goToDonate"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:textColor="@color/Black"
+            android:background="@drawable/grey_border"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="130dp"
+            android:text="Update profile"
+            android:layout_weight="1"
+            android:onClick="updateProfile"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="fill"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/grey_border"
+            android:onClick="goToRequestBlood"
+            android:text="Search for Blood Group"
+            android:textColor="@color/Black" />
+
+        <Button
+            android:textColor="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:layout_gravity="fill"
+            android:text="Blood Bank Login"
+            android:onClick="goToAdminLogin"
+            android:layout_margin="10dp"
+            android:background="@drawable/grey_border"
+
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:text="Blood Bank Register"
+            android:onClick="goToAdminReg"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black"
+            android:background="@drawable/grey_border"
+            android:layout_gravity="fill"
+            />
+        <Button
+            android:textColor="@color/Black"
+            android:background="@drawable/grey_border"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:layout_gravity="fill"
+            android:text="Pubic Login"
+            android:onClick="goToUserLogin"
+            android:layout_margin="10dp"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:layout_gravity="fill"
+            android:text="Public Register"
+            android:onClick="goToUserReg"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black"
+            android:background="@drawable/grey_border"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:layout_gravity="fill"
+            android:text="Verification from Blood Bank"
+            android:onClick="goToVerifiedRequests"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black"
+            android:background="@drawable/grey_border"
+            />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
