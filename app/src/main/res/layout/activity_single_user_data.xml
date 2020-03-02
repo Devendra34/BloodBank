@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SingleUserData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:textColor="@color/Black"
+        />
+    <TextView
+        android:id="@+id/suName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/Black"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email id :"
+        android:textColor="@color/Black"
+        />
+    <TextView
+        android:id="@+id/suEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email id"
+        android:textColor="@color/Black"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone No. :"
+        android:textColor="@color/Black"
+        />
+    <TextView
+        android:id="@+id/suPh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ph No."
+        android:textColor="@color/Black"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Group :"
+        android:textColor="@color/Black"
+        />
+    <TextView
+        android:id="@+id/suBgrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x+-"
+        android:textColor="@color/Black"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TimeStamp :"
+        android:textColor="@color/Black"
+        />
+    <TextView
+        android:id="@+id/suTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textColor="@color/Black"
+        android:textSize="30dp"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25sp">
+            <Button
+                android:id="@+id/suCheckup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_border"
+                android:text="Call for Check-up"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/suVerified"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verified"
+                android:onClick="seTitVerified"
+                android:background="@drawable/grey_border"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

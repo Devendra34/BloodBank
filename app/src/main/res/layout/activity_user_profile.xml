@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UserProfile">
+
+
+    <TextView
+        android:id="@+id/usrProfileHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textColor="@color/blue2"
+        android:textSize="45dp"
+        android:text="My Profile"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_below="@id/usrProfileHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/n1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/Grey"
+        app:cardCornerRadius="12dp">
+        <RelativeLayout
+            android:padding="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name : "
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/pf_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABC "
+                android:textSize="25sp"
+                android:textColor="#000"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/edit_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:onClick="editData"/>
+            
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ph1"
+        android:layout_below="@id/n1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/Grey"
+        app:cardCornerRadius="12dp">
+        <RelativeLayout
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number : "
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/pf_ph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9999999999 "
+                android:textColor="#000"
+                android:textSize="25sp"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/edit_Ph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:onClick="editData"/>
+            
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ed1"
+        android:layout_below="@id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardElevation="6dp"
+        android:background="@drawable/grey_border"
+        app:cardBackgroundColor="@color/Grey"
+        app:cardCornerRadius="12dp">
+        <RelativeLayout
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Id : "
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/pf_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="abc@def.com "
+                android:textSize="25sp"
+                android:textColor="#000"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/b1"
+        android:layout_below="@id/ph1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/Grey"
+        app:cardCornerRadius="12dp">
+        <RelativeLayout
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Group" 
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/pf_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x+- "
+                android:textSize="25sp"
+                android:textColor="#000" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/edit_Bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:onClick="editData"/>
+            
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+</RelativeLayout>
